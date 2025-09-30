@@ -112,3 +112,72 @@ footer {
   text-align: center;
   padding: 24px;
 }
+/* Sub-hero for inner pages */
+.hero-sub { background: linear-gradient(to right, #00284f, #003366); }
+.hero-sub h1 { color: #e76f00; }
+
+/* Gallery layout */
+.gallery-wrap { padding-top: 24px; }
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 16px;
+}
+.tile {
+  position: relative;
+  background: #0f2a4b;
+  border-radius: 14px;
+  overflow: hidden;
+  transform: translateZ(0);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+.tile.wide { grid-column: span 2; }
+.tile.tall { grid-row: span 2; min-height: 360px; }
+
+/* Placeholder blocks. Replace with real <img> later */
+.ph {
+  display: grid;
+  place-items: center;
+  height: 220px;
+  color: #fdfcf9;
+  background: radial-gradient(120% 120% at 20% 10%, rgba(231,111,0,0.35), transparent 60%),
+              radial-gradient(120% 120% at 80% 90%, rgba(255,255,255,0.08), transparent 60%),
+              #0b2240;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  outline: 1px solid rgba(231,111,0,0.4);
+}
+
+/* Video groups */
+.video-group { margin-top: 40px; }
+.video-group h3 { color: #003366; border-left: 6px solid #e76f00; padding-left: 10px; }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin-top: 12px;
+}
+.video-card {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 16px;
+}
+.video-ph {
+  height: 160px;
+  border-radius: 10px;
+  background: conic-gradient(from 140deg at 50% 50%, #0b2240, #12315a, #0b2240);
+  display: grid;
+  place-items: center;
+  color: #fdfcf9;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Section spacing on gallery page */
+#interior, #exterior, #land, #video { margin-bottom: 40px; }
