@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery • Horizon Heights Productions</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <nav>
+          <div class="brand"><img src="logo.png" alt="Horizon Heights Productions" style="height:60px;"></div>
+          <div>
+            <a href="index.html#services">Services</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="index.html#contact">Contact</a>
+            <a class="btn" href="index.html#contact">Book Now</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero hero-sub">
+      <div class="wrap">
+        <h1>Gallery</h1>
+        <p>Interior. Exterior. Land. Walkthroughs. Commercial. Big parcel splits. Designed to stop the scroll.</p>
+      </div>
+    </div>
+
+    <main class="wrap gallery-wrap">
+      <!-- Interior Photography -->
+      <section id="interior">
+        <h2>Interior Photography</h2>
+        <div class="masonry">
+          <!-- Replace placeholders with your real images later -->
+          <a class="tile" href="#" aria-label="Interior sample 1"><div class="ph">Interior 1</div></a>
+          <a class="tile wide" href="#"><div class="ph">Interior 2</div></a>
+          <a class="tile tall" href="#"><div class="ph">Interior 3</div></a>
+          <a class="tile" href="#"><div class="ph">Interior 4</div></a>
+        </div>
+      </section>
+
+      <!-- Exterior Photography -->
+      <section id="exterior">
+        <h2>Exterior Photography</h2>
+        <div class="masonry">
+          <a class="tile" href="#"><div class="ph">Exterior 1</div></a>
+          <a class="tile tall" href="#"><div class="ph">Exterior 2</div></a>
+          <a class="tile" href="#"><div class="ph">Exterior 3</div></a>
+          <a class="tile wide" href="#"><div class="ph">Exterior 4</div></a>
+        </div>
+      </section>
+
+      <!-- Land -->
+      <section id="land">
+        <h2>Land</h2>
+        <div class="masonry">
+          <a class="tile wide" href="#"><div class="ph">Land 1</div></a>
+          <a class="tile" href="#"><div class="ph">Land 2</div></a>
+          <a class="tile tall" href="#"><div class="ph">Land 3</div></a>
+          <a class="tile" href="#"><div class="ph">Land 4</div></a>
+        </div>
+      </section>
+
+      <!-- Video Sections -->
+      <section id="video">
+        <h2>Video</h2>
+
+        <div class="video-group">
+          <h3>Interior Walkthroughs</h3>
+          <div class="video-grid">
+            <div class="video-card">
+              <div class="video-ph">Walkthrough A</div>
+              <p>Clean, steady interior flow that guides the eye.</p>
+            </div>
+            <div class="video-card">
+              <div class="video-ph">Walkthrough B</div>
+              <p>Wide to detail shots for true spatial feel.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-group">
+          <h3>Commercial for Businesses</h3>
+          <div class="video-grid">
+            <div class="video-card">
+              <div class="video-ph">Commercial A</div>
+              <p>Brand storytelling that converts browsers to buyers.</p>
+            </div>
+            <div class="video-card">
+              <div class="video-ph">Commercial B</div>
+              <p>Short-form hooks for reels and ads.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-group">
+          <h3>Big Parcel Split Videos</h3>
+          <div class="video-grid">
+            <div class="video-card">
+              <div class="video-ph">Parcel Split A</div>
+              <p>High, medium, low passes with parcel overlays.</p>
+            </div>
+            <div class="video-card">
+              <div class="video-ph">Parcel Split B</div>
+              <p>Segmented breakdown across tracts for clarity.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© <span id="y"></span> Horizon Heights Productions</footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  </body>
+</html>
