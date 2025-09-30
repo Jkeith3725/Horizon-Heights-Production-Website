@@ -183,3 +183,8 @@ footer {
 #interior, #exterior, #land, #video { margin-bottom: 40px; }
 .brand { display: inline-block; }
 .brand img { display: block; }
+nav a[aria-current="page"] {
+  color: #e76f00; /* orange highlight */
+  border-bottom: 2px solid #e76f00;
+  padding-bottom: 4px;
+}
