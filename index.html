@@ -2,12 +2,59 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Horizon Heights</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Horizon Heights Productions</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1>Welcome to Horizon Heights</h1>
-    <h2>About Us</h2>
-    <p>We create beautiful aerial photos and videos.</p>
-    <p>We make beautiful photos and videos from the sky.</p>
+    <header>
+      <div class="wrap">
+        <nav>
+          <div><strong>Horizon Heights</strong></div>
+          <div>
+            <a href="#services">Services</a>
+            <a href="#work">Portfolio</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="wrap">
+        <h1>Cinematic Aerials. Professional Storytelling.</h1>
+        <p>Capturing the hidden beauty of the Mid-Ohio Valley through drone photography and videography that inspires pride and drives results.</p>
+      </div>
+    </div>
+
+    <main class="wrap">
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+          <div class="card"><h3>Real Estate</h3><p>Dynamic visuals that move properties faster.</p></div>
+          <div class="card"><h3>Land & Aerial</h3><p>Survey, showcase, and explore acreage with precision.</p></div>
+          <div class="card"><h3>Events</h3><p>Capture unforgettable moments from unique perspectives.</p></div>
+        </div>
+      </section>
+
+      <section id="work">
+        <h2>Portfolio</h2>
+        <p>Coming soon: a showcase of our most impactful projects.</p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:J.Keith3725@outlook.com">J.Keith3725@outlook.com</a></p>
+        <p>Phone: 330-685-6360</p>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="y"></span> Horizon Heights Productions
+    </footer>
+
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
