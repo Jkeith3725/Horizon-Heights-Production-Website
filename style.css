@@ -1,26 +1,25 @@
-/* Horizon Heights Productions Branding */
+/* Horizon Heights Productions Colors */
 * { box-sizing: border-box; }
-body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; color: #f8fafc; background: #0f172a; }
+body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; color: #003366; background: #fdfcf9; }
 
 /* Header */
-header { background: #1e293b; color: #f8fafc; }
+header { background: #003366; color: #fdfcf9; }
 .wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
 nav { display: flex; align-items: center; justify-content: space-between; }
-nav a { color: #f8fafc; text-decoration: none; margin-left: 20px; font-weight: 600; }
-nav a:hover { color: #facc15; } /* gold accent on hover */
+nav a { color: #fdfcf9; text-decoration: none; margin-left: 20px; font-weight: 600; }
+nav a:hover { color: #ff7b00; } /* orange hover */
 
 /* Hero */
-.hero { padding: 100px 16px; background: linear-gradient(to right, #0f172a, #1e293b); text-align: center; }
-.hero h1 { margin: 0 0 16px; font-size: 44px; color: #facc15; }
-.hero p { margin: 0 auto; max-width: 720px; font-size: 18px; color: #f1f5f9; }
+.hero { padding: 100px 16px; background: linear-gradient(to right, #003366, #004080); text-align: center; }
+.hero h1 { margin: 0 0 16px; font-size: 44px; color: #ff7b00; }
+.hero p { margin: 0 auto; max-width: 720px; font-size: 18px; color: #fdfcf9; }
 
 /* Sections */
-section { padding: 60px 16px; background: #111827; margin-bottom: 16px; border-radius: 12px; }
-h2 { margin: 0 0 20px; font-size: 30px; color: #facc15; }
+section { padding: 60px 16px; margin-bottom: 16px; border-radius: 12px; background: #ffffff; }
+h2 { margin: 0 0 20px; font-size: 30px; color: #003366; border-bottom: 2px solid #ff7b00; display: inline-block; }
 .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 20px; color: #e2e8f0; }
-.card h3 { color: #facc15; }
+.card { background: #fdfcf9; border: 1px solid #d1d5db; border-radius: 12px; padding: 20px; color: #003366; }
+.card h3 { color: #ff7b00; }
 
 /* Footer */
-footer { background: #1e293b; color: #94a3b8; text-align: center; padding: 24px; }
-
+footer { background: #003366; color: #fdfcf9; text-align: center; padding: 24px; }
