@@ -23,3 +23,11 @@ h2 { margin: 0 0 20px; font-size: 30px; color: #003366; border-bottom: 2px solid
 
 /* Footer */
 footer { background: #003366; color: #fdfcf9; text-align: center; padding: 24px; }
+/* Header polish */
+.brand img { height: 56px; display: block; }
+nav { gap: 24px; }
+nav > div:last-child { display: flex; align-items: center; gap: 20px; }
+
+/* Button */
+a.btn { background: #ff7b00; color: #ffffff; padding: 10px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+a.btn:hover { filter: brightness(1.1); }
