@@ -181,3 +181,5 @@ footer {
 
 /* Section spacing on gallery page */
 #interior, #exterior, #land, #video { margin-bottom: 40px; }
+.brand { display: inline-block; }
+.brand img { display: block; }
