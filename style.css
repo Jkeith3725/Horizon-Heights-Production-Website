@@ -1,33 +1,114 @@
-/* Horizon Heights Productions Colors */
+/* Horizon Heights Productions - Brand Styles */
+
+/* Reset & base */
 * { box-sizing: border-box; }
-body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; color: #003366; background: #fdfcf9; }
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #003366; /* deep blue text */
+  background: #fdfcf9; /* light neutral background */
+  line-height: 1.6;
+}
 
 /* Header */
-header { background: #003366; color: #fdfcf9; }
-.wrap { max-width: 1100px; margin: 0 auto; padding: 16px; }
-nav { display: flex; align-items: center; justify-content: space-between; }
-nav a { color: #fdfcf9; text-decoration: none; margin-left: 20px; font-weight: 600; }
-nav a:hover { color: #ff7b00; } /* orange hover */
+header {
+  background: #003366; /* deep blue header */
+  color: #fdfcf9;
+}
+.wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 16px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+.brand img {
+  height: 56px;
+  display: block;
+}
+nav > div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav a {
+  color: #fdfcf9;
+  text-decoration: none;
+  font-weight: 600;
+}
+nav a:hover {
+  color: #e76f00; /* dark orange hover */
+}
 
-/* Hero */
-.hero { padding: 100px 16px; background: linear-gradient(to right, #003366, #004080); text-align: center; }
-.hero h1 { margin: 0 0 16px; font-size: 44px; color: #ff7b00; }
-.hero p { margin: 0 auto; max-width: 720px; font-size: 18px; color: #fdfcf9; }
+/* Buttons */
+a.btn {
+  background: #e76f00; /* dark orange CTA */
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+}
+a.btn:hover {
+  filter: brightness(1.1);
+}
+
+/* Hero section */
+.hero {
+  padding: 100px 16px;
+  background: linear-gradient(to right, #003366, #004080); /* deep blue gradient */
+  text-align: center;
+  color: #fdfcf9;
+}
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: 44px;
+  color: #e76f00; /* orange highlight headline */
+}
+.hero p {
+  margin: 0 auto;
+  max-width: 720px;
+  font-size: 18px;
+}
 
 /* Sections */
-section { padding: 60px 16px; margin-bottom: 16px; border-radius: 12px; background: #ffffff; }
-h2 { margin: 0 0 20px; font-size: 30px; color: #003366; border-bottom: 2px solid #ff7b00; display: inline-block; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.card { background: #fdfcf9; border: 1px solid #d1d5db; border-radius: 12px; padding: 20px; color: #003366; }
-.card h3 { color: #ff7b00; }
+section {
+  padding: 60px 16px;
+  margin-bottom: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+}
+h2 {
+  margin: 0 0 20px;
+  font-size: 30px;
+  color: #003366;
+  border-bottom: 2px solid #e76f00; /* orange underline */
+  display: inline-block;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: #fdfcf9;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  padding: 20px;
+  color: #003366;
+}
+.card h3 {
+  color: #e76f00; /* orange card headers */
+}
 
 /* Footer */
-footer { background: #003366; color: #fdfcf9; text-align: center; padding: 24px; }
-/* Header polish */
-.brand img { height: 56px; display: block; }
-nav { gap: 24px; }
-nav > div:last-child { display: flex; align-items: center; gap: 20px; }
-
-/* Button */
-a.btn { background: #ff7b00; color: #ffffff; padding: 10px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; }
-a.btn:hover { filter: brightness(1.1); }
+footer {
+  background: #003366;
+  color: #fdfcf9;
+  text-align: center;
+  padding: 24px;
+}
