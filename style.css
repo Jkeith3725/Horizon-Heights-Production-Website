@@ -226,12 +226,43 @@ h2 {
   color: #e76f00; /* orange card headers */
 }
 
+/* Promotional Banner */
+.promo-banner {
+  background: linear-gradient(135deg, #e76f00 0%, #ff8c1a 100%);
+  padding: 16px 0;
+  text-align: center;
+}
+
+.promo-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-banner-img {
+  max-height: 80px;
+  width: auto;
+  display: block;
+}
+
 /* Enhanced Service Cards */
 .service-card {
   display: flex;
   flex-direction: column;
   gap: 12px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.service-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
 }
 
 .service-card:hover {
@@ -299,6 +330,322 @@ h2 {
 @keyframes pulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.8; }
+}
+
+/* CTA Image Wrappers */
+.cta-image-wrapper {
+  margin: 24px 0;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cta-image {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Feature Sections */
+.product-feature-section {
+  background: #ffffff;
+  padding: 80px 16px;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+.feature-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-reverse .feature-content {
+  direction: rtl;
+}
+
+.feature-reverse .feature-text {
+  direction: ltr;
+}
+
+.feature-reverse .feature-image {
+  direction: ltr;
+}
+
+.feature-text h2 {
+  color: #003366;
+  margin-bottom: 24px;
+  font-size: 36px;
+  border-bottom: none;
+}
+
+.feature-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #003366;
+  margin-bottom: 24px;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 12px 0 12px 32px;
+  position: relative;
+  font-size: 16px;
+  color: #003366;
+}
+
+.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #e76f00;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.feature-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 51, 102, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.feature-img:hover {
+  transform: scale(1.02);
+}
+
+/* Event Highlights Section */
+.event-highlights-section {
+  background: #fdfcf9;
+}
+
+.event-highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  margin-top: 40px;
+}
+
+.event-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 51, 102, 0.15);
+}
+
+.event-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.event-card h3 {
+  color: #003366;
+  margin: 20px 20px 8px;
+  font-size: 22px;
+}
+
+.event-card p {
+  color: #003366;
+  margin: 0 20px 20px;
+  opacity: 0.8;
+}
+
+/* Testimonial Video */
+.testimonial-video-wrapper {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.testimonial-video-wrapper h3 {
+  color: #e76f00;
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* About Section */
+.about-section {
+  background: #ffffff;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text h2 {
+  color: #003366;
+  margin-bottom: 24px;
+  border-bottom: none;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.about-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 51, 102, 0.15);
+}
+
+/* Team Section */
+.team-section {
+  text-align: center;
+  padding-top: 40px;
+  border-top: 2px solid #d1d5db;
+}
+
+.team-section h3 {
+  color: #003366;
+  margin-bottom: 32px;
+  font-size: 28px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.team-member {
+  background: #fdfcf9;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 51, 102, 0.12);
+}
+
+.team-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px;
+  display: block;
+  border: 4px solid #e76f00;
+}
+
+.team-member h4 {
+  color: #003366;
+  margin: 12px 0 4px;
+  font-size: 20px;
+}
+
+.team-member p {
+  color: #e76f00;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* CTA Banner Section */
+.cta-banner-section {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
+.cta-banner-content {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-banner-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cta-banner-overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fdfcf9;
+  padding: 60px 32px;
+  background: rgba(0, 51, 102, 0.85);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-banner-overlay h2 {
+  color: #fdfcf9;
+  margin-bottom: 16px;
+  font-size: 36px;
+  border-bottom: none;
+}
+
+.cta-banner-overlay p {
+  font-size: 18px;
+  margin-bottom: 32px;
+  opacity: 0.95;
+}
+
+.btn-large {
+  padding: 18px 40px;
+  font-size: 20px;
+  box-shadow: 0 4px 16px rgba(231, 111, 0, 0.4);
+}
+
+.btn-large:hover {
+  box-shadow: 0 6px 24px rgba(231, 111, 0, 0.6);
 }
 
 /* Portfolio Grid */
@@ -825,6 +1172,27 @@ footer {
   border-top: 1px solid rgba(253, 252, 249, 0.2);
   opacity: 0.8;
 }
+
+/* Social Media Icons */
+.social-media-links {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.social-media-links a:hover .social-icon {
+  transform: scale(1.15);
+  opacity: 1;
+}
 /* Sub-hero for inner pages */
 .hero-sub { background: linear-gradient(to right, #00284f, #003366); }
 .hero-sub h1 { color: #e76f00; }
@@ -915,13 +1283,52 @@ nav a[aria-current="page"] {
     justify-content: center;
   }
 
+  /* Promo banner */
+  .promo-banner-img {
+    max-height: 60px;
+  }
+
   /* Service cards */
   .grid {
     grid-template-columns: 1fr;
   }
 
+  .service-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  /* Product Features */
+  .feature-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .feature-reverse .feature-content {
+    direction: ltr;
+  }
+
+  .feature-text h2 {
+    font-size: 28px;
+  }
+
+  .feature-text p {
+    font-size: 16px;
+  }
+
   /* Portfolio grid */
   .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-img {
+    height: auto;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+  }
+
+  /* Event highlights */
+  .event-highlights-grid {
     grid-template-columns: 1fr;
   }
 
@@ -956,6 +1363,34 @@ nav a[aria-current="page"] {
     font-size: 36px;
   }
 
+  /* About section */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Team section */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA Banner */
+  .cta-banner-content {
+    min-height: 300px;
+  }
+
+  .cta-banner-overlay {
+    padding: 40px 24px;
+  }
+
+  .cta-banner-overlay h2 {
+    font-size: 28px;
+  }
+
+  .cta-banner-overlay p {
+    font-size: 16px;
+  }
+
   /* Contact */
   .contact-container {
     grid-template-columns: 1fr;
@@ -988,8 +1423,12 @@ nav a[aria-current="page"] {
     text-align: center;
   }
 
+  .social-media-links {
+    justify-content: center;
+  }
+
   /* Buttons */
-  .btn, .btn-secondary {
+  .btn, .btn-secondary, .btn-large {
     min-height: 48px;
     padding: 14px 24px;
   }

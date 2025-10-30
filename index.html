@@ -40,13 +40,12 @@
 
     <!-- Hero section with video background -->
     <section id="hero">
-      <!-- TODO: Replace placeholder paths with real assets:
-           - assets/hero-loop.mp4: 5s looping drone footage, ~720p H.264, target ≤3-4MB
-           - assets/hero-loop.webm: WebM version for better compression
-           - assets/hero-poster.jpg: High-quality still frame for fallback -->
+      <!-- MEDIA PLACEHOLDER: HERO VIDEO
+           Google Sheet Row: "Hero video" - Hero banner placement
+           Replace src paths below with actual Google Drive video links -->
       <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-hidden="true">
-        <source src="assets/hero-loop.webm" type="video/webm">
-        <source src="assets/hero-loop.mp4" type="video/mp4">
+        <source src="PLACEHOLDER_HERO_VIDEO_WEBM" type="video/webm">
+        <source src="PLACEHOLDER_HERO_VIDEO_MP4" type="video/mp4">
       </video>
       <div class="hero-overlay"></div>
       <div class="hero-content">
@@ -56,12 +55,27 @@
       </div>
     </section>
 
+    <!-- MEDIA PLACEHOLDER: PROMOTIONAL BANNER -->
+    <div class="promo-banner">
+      <div class="wrap">
+        <div class="promo-content">
+          <!-- Google Sheet Row: "Promotional banner" (logo) -->
+          <img src="PLACEHOLDER_PROMOTIONAL_BANNER" alt="Special Offer" class="promo-banner-img">
+        </div>
+      </div>
+    </div>
+
     <!-- Main content -->
     <main class="wrap">
       <section id="services">
         <h2>Our Services</h2>
         <div class="grid">
           <div class="card service-card">
+            <!-- MEDIA PLACEHOLDER: SERVICE ICON ONE
+                 Google Sheet Row: "Service icon one" -->
+            <div class="service-icon-wrapper">
+              <img src="PLACEHOLDER_SERVICE_ICON_1" alt="Real Estate Services" class="service-icon">
+            </div>
             <h3>Real Estate</h3>
             <p class="service-price">Starting at $299</p>
             <p class="service-desc">Dynamic visuals that move properties faster.</p>
@@ -74,6 +88,11 @@
             <a href="#contact" class="btn btn-secondary">View Package</a>
           </div>
           <div class="card service-card">
+            <!-- MEDIA PLACEHOLDER: SERVICE ICON TWO
+                 Google Sheet Row: "Service icon two" -->
+            <div class="service-icon-wrapper">
+              <img src="PLACEHOLDER_SERVICE_ICON_2" alt="Land & Aerial Services" class="service-icon">
+            </div>
             <h3>Land & Aerial</h3>
             <p class="service-price">Starting at $399</p>
             <p class="service-desc">Survey, showcase, and explore acreage with precision.</p>
@@ -86,6 +105,9 @@
             <a href="#contact" class="btn btn-secondary">View Package</a>
           </div>
           <div class="card service-card">
+            <div class="service-icon-wrapper">
+              <img src="PLACEHOLDER_SERVICE_ICON_3" alt="Event Services" class="service-icon">
+            </div>
             <h3>Events</h3>
             <p class="service-price">Starting at $499</p>
             <p class="service-desc">Capture unforgettable moments from unique perspectives.</p>
@@ -100,64 +122,78 @@
         </div>
         <div class="section-cta">
           <p class="urgency-text">Only 3 slots available this week — Book now for priority scheduling</p>
+          <!-- MEDIA PLACEHOLDER: CALL TO ACTION ONE
+               Google Sheet Row: "Call to action one" - Services promo placement -->
+          <div class="cta-image-wrapper">
+            <img src="PLACEHOLDER_CTA_1" alt="Book Your Session Today" class="cta-image">
+          </div>
           <a href="#contact" class="btn">Schedule Free Consultation</a>
+        </div>
+      </section>
+
+      <!-- MEDIA PLACEHOLDER: PRODUCT FEATURE ONE -->
+      <section id="product-feature-1" class="product-feature-section">
+        <div class="feature-content">
+          <div class="feature-text">
+            <h2>Cutting-Edge Drone Technology</h2>
+            <p>We use the latest 4K and 6K capable drones to capture stunning aerial footage that showcases every detail of your property. Our professional-grade equipment ensures crystal-clear images and smooth, cinematic video that makes listings stand out.</p>
+            <ul class="feature-list">
+              <li>4K/6K Ultra HD resolution</li>
+              <li>Gimbal-stabilized footage</li>
+              <li>Advanced obstacle avoidance</li>
+              <li>Extended flight time for complex shots</li>
+            </ul>
+          </div>
+          <div class="feature-image">
+            <!-- Google Sheet Row: "Product feature" -->
+            <img src="PLACEHOLDER_PRODUCT_FEATURE_1" alt="Professional Drone Equipment" class="feature-img">
+          </div>
         </div>
       </section>
 
       <section id="work">
         <h2>Portfolio</h2>
         <p class="section-intro">See how we transform properties and land into compelling visual stories.</p>
+        <!-- MEDIA PLACEHOLDER: PHOTOS
+             Google Sheet Row: "Photos" - Portfolio/gallery section -->
         <div class="portfolio-grid">
-          <!-- TODO: Replace placeholders with real project images -->
           <div class="portfolio-item">
-            <div class="portfolio-img ph">
-              <span>Luxury Estate</span>
-            </div>
+            <img src="PLACEHOLDER_PHOTO_1" alt="Modern Luxury Estate" class="portfolio-img" loading="lazy">
             <div class="portfolio-caption">
               <h4>Modern Luxury Estate</h4>
               <p class="portfolio-result">Sold in 3 days • 127% of asking</p>
             </div>
           </div>
           <div class="portfolio-item">
-            <div class="portfolio-img ph">
-              <span>Commercial Land</span>
-            </div>
+            <img src="PLACEHOLDER_PHOTO_2" alt="45-Acre Commercial Parcel" class="portfolio-img" loading="lazy">
             <div class="portfolio-caption">
               <h4>45-Acre Commercial Parcel</h4>
               <p class="portfolio-result">4 offers in 1 week</p>
             </div>
           </div>
           <div class="portfolio-item">
-            <div class="portfolio-img ph">
-              <span>Historic Home</span>
-            </div>
+            <img src="PLACEHOLDER_PHOTO_3" alt="Historic Downtown Property" class="portfolio-img" loading="lazy">
             <div class="portfolio-caption">
               <h4>Historic Downtown Property</h4>
               <p class="portfolio-result">Featured in Realtor Magazine</p>
             </div>
           </div>
           <div class="portfolio-item">
-            <div class="portfolio-img ph">
-              <span>Event Coverage</span>
-            </div>
+            <img src="PLACEHOLDER_PHOTO_4" alt="Event Coverage" class="portfolio-img" loading="lazy">
             <div class="portfolio-caption">
               <h4>Annual Charity Gala</h4>
               <p class="portfolio-result">50K+ social media views</p>
             </div>
           </div>
           <div class="portfolio-item">
-            <div class="portfolio-img ph">
-              <span>Farm & Land</span>
-            </div>
+            <img src="PLACEHOLDER_PHOTO_5" alt="200-Acre Working Farm" class="portfolio-img" loading="lazy">
             <div class="portfolio-caption">
               <h4>200-Acre Working Farm</h4>
               <p class="portfolio-result">Sold above market value</p>
             </div>
           </div>
           <div class="portfolio-item">
-            <div class="portfolio-img ph">
-              <span>Waterfront</span>
-            </div>
+            <img src="PLACEHOLDER_PHOTO_6" alt="Riverside Development Site" class="portfolio-img" loading="lazy">
             <div class="portfolio-caption">
               <h4>Riverside Development Site</h4>
               <p class="portfolio-result">Multi-party bidding war</p>
@@ -166,6 +202,30 @@
         </div>
         <div class="section-cta">
           <a href="gallery.html" class="btn">View Full Gallery</a>
+        </div>
+      </section>
+
+      <!-- MEDIA PLACEHOLDER: EVENT HIGHLIGHTS -->
+      <section id="event-highlights" class="event-highlights-section">
+        <h2>Event Highlights</h2>
+        <p class="section-intro">Capturing the energy and excitement of your special moments from above.</p>
+        <!-- Google Sheet Row: "Event highlights" -->
+        <div class="event-highlights-grid">
+          <div class="event-card">
+            <img src="PLACEHOLDER_EVENT_HIGHLIGHT_1" alt="Wedding Coverage" class="event-img" loading="lazy">
+            <h3>Weddings & Celebrations</h3>
+            <p>Breathtaking aerial views of your special day</p>
+          </div>
+          <div class="event-card">
+            <img src="PLACEHOLDER_EVENT_HIGHLIGHT_2" alt="Corporate Event" class="event-img" loading="lazy">
+            <h3>Corporate Events</h3>
+            <p>Professional coverage for conferences and gatherings</p>
+          </div>
+          <div class="event-card">
+            <img src="PLACEHOLDER_EVENT_HIGHLIGHT_3" alt="Festival Coverage" class="event-img" loading="lazy">
+            <h3>Festivals & Community</h3>
+            <p>Showcase the scale and atmosphere of large events</p>
+          </div>
         </div>
       </section>
 
@@ -213,6 +273,17 @@
             </div>
           </div>
         </div>
+        <!-- MEDIA PLACEHOLDER: TESTIMONIAL VIDEO
+             Google Sheet Row: "Testimonial video" -->
+        <div class="testimonial-video-wrapper">
+          <h3>Hear From Our Clients</h3>
+          <div class="video-container">
+            <video controls poster="PLACEHOLDER_TESTIMONIAL_POSTER" class="testimonial-video">
+              <source src="PLACEHOLDER_TESTIMONIAL_VIDEO" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
       </section>
 
       <!-- How It Works Section -->
@@ -239,6 +310,26 @@
             <div class="step-number">4</div>
             <h3>Increase Sales</h3>
             <p>Watch your listings stand out, generate more interest, and close faster than the competition.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEDIA PLACEHOLDER: PRODUCT FEATURE TWO -->
+      <section id="product-feature-2" class="product-feature-section feature-reverse">
+        <div class="feature-content">
+          <div class="feature-image">
+            <!-- Google Sheet Row: "Product feature two" -->
+            <img src="PLACEHOLDER_PRODUCT_FEATURE_2" alt="Professional Editing Suite" class="feature-img">
+          </div>
+          <div class="feature-text">
+            <h2>Professional Post-Production</h2>
+            <p>Every project goes through our professional editing workflow. Color grading, stabilization, and cinematic transitions turn raw footage into marketing gold. Your final deliverables are ready to publish immediately.</p>
+            <ul class="feature-list">
+              <li>Professional color grading</li>
+              <li>Cinematic transitions & music</li>
+              <li>Multiple format exports</li>
+              <li>Fast turnaround (24-48 hours)</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -343,6 +434,46 @@
             <div class="faq-answer">
               <p>Yes! We offer ground-based interior photography and videography to complement our aerial work. Book a combined package for complete property coverage at a discounted rate.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEDIA PLACEHOLDER: ABOUT US -->
+      <section id="about-us" class="about-section">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About Horizon Heights Productions</h2>
+            <p>We're not just drone operators — we're visual storytellers passionate about showcasing the Mid-Ohio Valley from breathtaking new perspectives. With FAA Part 107 certification, years of experience, and cutting-edge equipment, we deliver aerial content that drives real results for our clients.</p>
+            <p>From real estate agents looking to move properties faster, to land developers needing precise mapping, to event planners wanting unforgettable coverage — we bring technical expertise and creative vision to every project.</p>
+          </div>
+          <!-- Google Sheet Row: "About us" -->
+          <div class="about-image">
+            <img src="PLACEHOLDER_ABOUT_US_IMAGE" alt="About Horizon Heights" class="about-img" loading="lazy">
+          </div>
+        </div>
+        <!-- MEDIA PLACEHOLDER: TEAM MEMBER PHOTO ONE -->
+        <div class="team-section">
+          <h3>Meet Our Team</h3>
+          <div class="team-grid">
+            <div class="team-member">
+              <!-- Google Sheet Row: "Team member photo one" -->
+              <img src="PLACEHOLDER_TEAM_MEMBER_1" alt="Team Member" class="team-photo">
+              <h4>J. Keith</h4>
+              <p>FAA Certified Pilot & Founder</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MEDIA PLACEHOLDER: CALL TO ACTION PHOTO -->
+      <section id="cta-banner" class="cta-banner-section">
+        <div class="cta-banner-content">
+          <!-- Google Sheet Row: "Call to action photo" -->
+          <img src="PLACEHOLDER_CTA_PHOTO" alt="Ready to elevate your marketing" class="cta-banner-img">
+          <div class="cta-banner-overlay">
+            <h2>Ready to Elevate Your Marketing?</h2>
+            <p>Join hundreds of satisfied clients who've transformed their listings with professional aerial content.</p>
+            <a href="#contact" class="btn btn-large">Get Your Free Quote</a>
           </div>
         </div>
       </section>
@@ -458,6 +589,22 @@
         <div class="footer-col">
           <h4>Horizon Heights Productions</h4>
           <p>Professional drone videography and aerial photography for the Mid-Ohio Valley.</p>
+          <!-- MEDIA PLACEHOLDER: SOCIAL MEDIA ICONS
+               Google Sheet Row: "Social media icon" (Facebook, Instagram, TikTok, YouTube) -->
+          <div class="social-media-links">
+            <a href="https://facebook.com/horizonheights" target="_blank" rel="noopener" aria-label="Facebook">
+              <img src="PLACEHOLDER_SOCIAL_FACEBOOK" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://instagram.com/horizonheights" target="_blank" rel="noopener" aria-label="Instagram">
+              <img src="PLACEHOLDER_SOCIAL_INSTAGRAM" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://tiktok.com/@horizonheights" target="_blank" rel="noopener" aria-label="TikTok">
+              <img src="PLACEHOLDER_SOCIAL_TIKTOK" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://youtube.com/@horizonheights" target="_blank" rel="noopener" aria-label="YouTube">
+              <img src="PLACEHOLDER_SOCIAL_YOUTUBE" alt="YouTube" class="social-icon">
+            </a>
+          </div>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
