@@ -25,13 +25,23 @@
       </div>
     </header>
 
-    <!-- Hero section -->
-    <div class="hero">
-      <div class="wrap">
+    <!-- Hero section with video background -->
+    <section id="hero">
+      <!-- TODO: Replace placeholder paths with real assets:
+           - assets/hero-loop.mp4: 5s looping drone footage, ~720p H.264, target ≤3-4MB
+           - assets/hero-loop.webm: WebM version for better compression
+           - assets/hero-poster.jpg: High-quality still frame for fallback -->
+      <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/hero-poster.jpg" aria-hidden="true">
+        <source src="assets/hero-loop.webm" type="video/webm">
+        <source src="assets/hero-loop.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
         <h1>Cinematic Aerials. Professional Storytelling.</h1>
         <p>Capturing the hidden beauty of the Mid-Ohio Valley with drone photography and videography that inspires pride and drives results.</p>
+        <a class="btn hero-cta" href="#contact">Book Now</a>
       </div>
-    </div>
+    </section>
 
     <!-- Main content -->
     <main class="wrap">
@@ -64,5 +74,6 @@
     <script>
       document.getElementById('y').textContent = new Date().getFullYear();
     </script>
+    <script src="hero.js"></script>
   </body>
 </html>
