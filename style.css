@@ -57,22 +57,126 @@ a.btn:hover {
   filter: brightness(1.1);
 }
 
-/* Hero section */
-.hero {
-  padding: 100px 16px;
-  background: linear-gradient(to right, #003366, #004080); /* deep blue gradient */
+/* Hero section with video background */
+#hero {
+  position: relative;
+  min-height: max(70vh, 420px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(to right, #003366, #004080); /* fallback gradient */
+}
+
+/* Video element - full-bleed cover */
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+/* Semi-transparent overlay for text contrast */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 51, 102, 0.6) 0%,
+    rgba(0, 51, 102, 0.75) 100%
+  );
+  z-index: 2;
+}
+
+/* Hero content - centered and above overlay */
+.hero-content {
+  position: relative;
+  z-index: 3;
   text-align: center;
   color: #fdfcf9;
-}
-.hero h1 {
-  margin: 0 0 16px;
-  font-size: 44px;
-  color: #e76f00; /* orange highlight headline */
-}
-.hero p {
+  padding: 32px 16px;
+  max-width: 900px;
   margin: 0 auto;
+}
+
+.hero-content h1 {
+  margin: 0 0 20px;
+  font-size: clamp(32px, 5vw, 52px);
+  color: #e76f00; /* orange highlight headline */
+  line-height: 1.2;
+}
+
+.hero-content p {
+  margin: 0 auto 32px;
   max-width: 720px;
+  font-size: clamp(16px, 2.5vw, 20px);
+  line-height: 1.6;
+}
+
+/* Hero CTA with enhanced focus state */
+.hero-cta {
+  display: inline-block;
+  background: #e76f00;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
   font-size: 18px;
+  text-decoration: none;
+  transition: filter 0.2s ease;
+}
+
+.hero-cta:hover {
+  filter: brightness(1.15);
+}
+
+.hero-cta:focus {
+  outline: 3px solid #fdfcf9;
+  outline-offset: 4px;
+}
+
+.hero-cta:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.hero-cta:focus-visible {
+  outline: 3px solid #fdfcf9;
+  outline-offset: 4px;
+}
+
+/* Mobile: hide video, use poster as background image */
+@media (max-width: 767px) {
+  #hero-video {
+    display: none;
+  }
+
+  #hero {
+    background-image: url('assets/hero-poster.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .hero-content {
+    padding: 48px 20px;
+  }
+}
+
+/* Reduced motion: hide video, show poster */
+@media (prefers-reduced-motion: reduce) {
+  #hero-video {
+    display: none;
+  }
+
+  #hero {
+    background-image: url('assets/hero-poster.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Sections */
