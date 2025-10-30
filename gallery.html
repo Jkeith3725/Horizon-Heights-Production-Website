@@ -10,111 +10,367 @@
     <header>
       <div class="wrap">
         <nav>
-         <a class="brand" href="index.html" aria-label="Horizon Heights Productions — Home">
-  <img src="logo.png" alt="Horizon Heights Productions" style="height:60px;">
-</a>
+          <a class="brand" href="index.html" aria-label="Horizon Heights Productions — Home">
+            <img src="logo.png" alt="Horizon Heights Productions" style="height:60px;">
+          </a>
           <div>
             <a href="index.html">Home</a>
-<a href="index.html#services">Services</a>
-<a href="gallery.html" aria-current="page">Gallery</a>
-<a href="index.html#contact">Contact</a>
-<a class="btn" href="index.html#contact">Book Now</a>
+            <a href="index.html#services">Services</a>
+            <a href="gallery.html" aria-current="page">Gallery</a>
+            <a href="index.html#contact">Contact</a>
+            <a class="btn" href="index.html#contact">Book Now</a>
           </div>
         </nav>
       </div>
     </header>
 
-    <div class="hero hero-sub">
-      <div class="wrap">
-        <h1>Gallery</h1>
-        <p>Interior. Exterior. Land. Walkthroughs. Commercial. Big parcel splits. Designed to stop the scroll.</p>
+    <section class="gallery-hero" aria-labelledby="gallery-title">
+      <video class="gallery-hero__video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1600&q=80">
+        <source src="https://cdn.coverr.co/videos/coverr-drone-flight-over-a-modern-city-4317/1080p.mp4" type="video/mp4">
+        <source src="https://cdn.coverr.co/videos/coverr-drone-flight-over-a-modern-city-4317/1080p.webm" type="video/webm">
+      </video>
+      <div class="gallery-hero__overlay" aria-hidden="true"></div>
+      <div class="gallery-hero__content wrap">
+        <p class="eyebrow">Portfolio</p>
+        <h1 id="gallery-title">Gallery</h1>
+        <p class="lede">A curated reel of the interiors, exteriors, land developments, and cinematic reels that move listings in the Mid-Ohio Valley.</p>
+        <div class="hero-metrics" role="presentation">
+          <div>
+            <span class="metric">4.2x</span>
+            <span class="metric-label">More Listing Views</span>
+          </div>
+          <div>
+            <span class="metric">3.7 days</span>
+            <span class="metric-label">Average Time to Contract</span>
+          </div>
+          <div>
+            <span class="metric">120+</span>
+            <span class="metric-label">Homes Brought to Market</span>
+          </div>
+        </div>
+        <nav class="hero-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li aria-current="page">Gallery</li>
+          </ol>
+        </nav>
       </div>
-    </div>
+    </section>
 
-    <main class="wrap gallery-wrap">
-      <!-- Interior Photography -->
-      <section id="interior">
-        <h2>Interior Photography</h2>
-        <div class="masonry">
-          <!-- Replace placeholders with your real images later -->
-          <a class="tile" href="#" aria-label="Interior sample 1"><div class="ph">Interior 1</div></a>
-          <a class="tile wide" href="#"><div class="ph">Interior 2</div></a>
-          <a class="tile tall" href="#"><div class="ph">Interior 3</div></a>
-          <a class="tile" href="#"><div class="ph">Interior 4</div></a>
+    <main class="gallery-main">
+      <aside class="gallery-side-nav" aria-label="Gallery sections">
+        <div class="gallery-side-nav__inner">
+          <span class="side-nav-label">Jump to</span>
+          <a class="side-nav-link" href="#interior">Interior</a>
+          <a class="side-nav-link" href="#exterior">Exterior</a>
+          <a class="side-nav-link" href="#land">Land</a>
+          <a class="side-nav-link" href="#reels">Video Reels</a>
         </div>
-      </section>
+      </aside>
 
-      <!-- Exterior Photography -->
-      <section id="exterior">
-        <h2>Exterior Photography</h2>
-        <div class="masonry">
-          <a class="tile" href="#"><div class="ph">Exterior 1</div></a>
-          <a class="tile tall" href="#"><div class="ph">Exterior 2</div></a>
-          <a class="tile" href="#"><div class="ph">Exterior 3</div></a>
-          <a class="tile wide" href="#"><div class="ph">Exterior 4</div></a>
+      <div class="wrap gallery-wrap">
+        <div class="gallery-controls" aria-label="Filter gallery categories">
+          <div
+            class="filter-bar"
+            role="radiogroup"
+            aria-label="Gallery categories"
+            aria-describedby="gallery-filter-caption gallery-filter-status"
+          >
+            <button class="filter-pill is-active" type="button" role="radio" aria-checked="true" data-filter="all" tabindex="0">All</button>
+            <button class="filter-pill" type="button" role="radio" aria-checked="false" data-filter="interior" tabindex="-1">Interior</button>
+            <button class="filter-pill" type="button" role="radio" aria-checked="false" data-filter="exterior" tabindex="-1">Exterior</button>
+            <button class="filter-pill" type="button" role="radio" aria-checked="false" data-filter="land" tabindex="-1">Land</button>
+            <button class="filter-pill" type="button" role="radio" aria-checked="false" data-filter="reels" tabindex="-1">Video</button>
+          </div>
+          <p class="controls-caption" id="gallery-filter-caption">Use the filters or jump links to explore the work style that matters most to your next listing.</p>
+          <p class="visually-hidden" id="gallery-filter-status" data-filter-status aria-live="polite">Showing all gallery pieces.</p>
         </div>
-      </section>
 
-      <!-- Land -->
-      <section id="land">
-        <h2>Land</h2>
-        <div class="masonry">
-          <a class="tile wide" href="#"><div class="ph">Land 1</div></a>
-          <a class="tile" href="#"><div class="ph">Land 2</div></a>
-          <a class="tile tall" href="#"><div class="ph">Land 3</div></a>
-          <a class="tile" href="#"><div class="ph">Land 4</div></a>
-        </div>
-      </section>
-
-      <!-- Video Sections -->
-      <section id="video">
-        <h2>Video</h2>
-
-        <div class="video-group">
-          <h3>Interior Walkthroughs</h3>
-          <div class="video-grid">
-            <div class="video-card">
-              <div class="video-ph">Walkthrough A</div>
-              <p>Clean, steady interior flow that guides the eye.</p>
+        <!-- Interior Photography -->
+        <section id="interior" class="gallery-section" data-section="interior">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Atmosphere-led interiors</p>
+              <h2>Interior Photography</h2>
+              <p class="section-lede">We choreograph natural light, detail-rich staging, and hero angles to give buyers a cinematic sense of place before they ever set foot inside.</p>
             </div>
-            <div class="video-card">
-              <div class="video-ph">Walkthrough B</div>
-              <p>Wide to detail shots for true spatial feel.</p>
+            <div class="section-metric-card">
+              <p class="metric-title">Sold in 72 Hours</p>
+              <p class="metric-body">“The listing went from quiet to booked solid after Horizon Heights’ interior set dropped.” — Riverstone Realty</p>
             </div>
           </div>
-        </div>
+          <div class="masonry" data-group="interior">
+            <figure class="tile reveal" tabindex="0" data-gallery-type="interior" data-lightbox-src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Riverside Penthouse" data-lightbox-description="Sunrise kitchen capture highlighting the marble waterfall island and ambient cove lighting.">
+              <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?auto=format&fit=crop&w=800&q=80" alt="Luxury kitchen flooded with morning light">
+              <figcaption>
+                <span class="tile-category">Luxury Condo</span>
+                <h3>Riverside Penthouse</h3>
+                <p>Warm dawn capture with a 3-shot bracket to keep the exterior skyline glowing.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--wide reveal" tabindex="0" data-gallery-type="interior" data-lightbox-src="https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Custom Architectural Detail" data-lightbox-description="Handheld reveal across custom millwork, balanced with bounce-lit windows.">
+              <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=80" alt="Modern living room with floor to ceiling windows">
+              <figcaption>
+                <span class="tile-category">Modern Residence</span>
+                <h3>Architectural Storytelling</h3>
+                <p>Layered composition pairing lifestyle elements with clean architectural lines.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--tall reveal" tabindex="0" data-gallery-type="interior" data-lightbox-src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80" data-lightbox-title="Atrium Staircase" data-lightbox-description="Drone-enabled vertical still of a sculptural staircase core.">
+              <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=600&q=80" alt="Sculptural staircase inside a luxury home">
+              <figcaption>
+                <span class="tile-category">Atrium Series</span>
+                <h3>Vertical Showcase</h3>
+                <p>Drone-assisted interior pull to reveal the floating staircase geometry.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile reveal" tabindex="0" data-gallery-type="interior" data-lightbox-src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Lounge Twilight" data-lightbox-description="Blue hour blend layering window ambience and tungsten warmth for a true-to-life finish.">
+              <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=900&q=80" alt="Cozy lounge with sectional sofa and ambient lighting">
+              <figcaption>
+                <span class="tile-category">Twilight Session</span>
+                <h3>Lounge Twilight Blend</h3>
+                <p>Blue hour ambiance fused with warm tungsten for an inviting finish.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
 
-        <div class="video-group">
-          <h3>Commercial for Businesses</h3>
-          <div class="video-grid">
-            <div class="video-card">
-              <div class="video-ph">Commercial A</div>
-              <p>Brand storytelling that converts browsers to buyers.</p>
+        <!-- Exterior Photography -->
+        <section id="exterior" class="gallery-section gallery-section--alt" data-section="exterior">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Destination-worthy curb appeal</p>
+              <h2>Exterior Photography</h2>
+              <p class="section-lede">Elevated vantage points and blue-hour balancing make every facade feel like a flagship listing.</p>
             </div>
-            <div class="video-card">
-              <div class="video-ph">Commercial B</div>
-              <p>Short-form hooks for reels and ads.</p>
+            <div class="section-metric-card">
+              <p class="metric-title">+118% Click-through</p>
+              <p class="metric-body">Our exterior hero frames more than doubled traffic for a recent downtown loft launch.</p>
             </div>
           </div>
-        </div>
+          <div class="masonry" data-group="exterior">
+            <figure class="tile reveal" tabindex="0" data-gallery-type="exterior" data-lightbox-src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Riverfront Retreat" data-lightbox-description="Golden-hour facade capture with stacked drone exposures for dynamic skies.">
+              <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=900&q=80" alt="Large modern home overlooking a river at sunset">
+              <figcaption>
+                <span class="tile-category">Luxury Retreat</span>
+                <h3>Riverfront Glow</h3>
+                <p>Multi-exposure blend for balanced window warmth and skyline vibrance.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--tall reveal" tabindex="0" data-gallery-type="exterior" data-lightbox-src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Mountain Estate" data-lightbox-description="High-elevation pano stitched from five drone frames to emphasize the property’s acreage.">
+              <img src="https://images.unsplash.com/photo-1480074568708-e7b720bb3f09?auto=format&fit=crop&w=700&q=80" alt="Mountain home surrounded by forest captured by drone">
+              <figcaption>
+                <span class="tile-category">Estate</span>
+                <h3>Mountain Majesty</h3>
+                <p>Five-frame aerial pano for a sweeping sense of place.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--wide reveal" tabindex="0" data-gallery-type="exterior" data-lightbox-src="https://images.unsplash.com/photo-1505691723494-dcb9d81a56b0?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Urban Revival" data-lightbox-description="Blue hour composite showcasing activated city nightlife and rooftop amenities.">
+              <img src="https://images.unsplash.com/photo-1505691723494-dcb9d81a56b0?auto=format&fit=crop&w=1200&q=80" alt="City apartment building lit up at dusk">
+              <figcaption>
+                <span class="tile-category">Urban Loft</span>
+                <h3>Nightlife Narrative</h3>
+                <p>Twilight exterior highlighting rooftop amenities and streetscape energy.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile reveal" tabindex="0" data-gallery-type="exterior" data-lightbox-src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Suburban Oasis" data-lightbox-description="Golden-hour pool capture with color graded highlights to maximize allure.">
+              <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=900&q=80" alt="Suburban home with pool at dusk">
+              <figcaption>
+                <span class="tile-category">Family Estate</span>
+                <h3>Backyard Invitation</h3>
+                <p>Ambient pool lighting framed against a glowing horizon for resort vibes.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
 
-        <div class="video-group">
-          <h3>Big Parcel Split Videos</h3>
-          <div class="video-grid">
-            <div class="video-card">
-              <div class="video-ph">Parcel Split A</div>
-              <p>High, medium, low passes with parcel overlays.</p>
+        <!-- Land -->
+        <section id="land" class="gallery-section" data-section="land">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Survey-ready land mapping</p>
+              <h2>Land</h2>
+              <p class="section-lede">From development parcels to sprawling farms, drone sweeps map acreage with crisp overlays that help buyers visualize opportunity.</p>
             </div>
-            <div class="video-card">
-              <div class="video-ph">Parcel Split B</div>
-              <p>Segmented breakdown across tracts for clarity.</p>
+            <div class="section-metric-card">
+              <p class="metric-title">4 Parcels, 1 Weekend</p>
+              <p class="metric-body">Parcel-split campaign booked out a developer’s release before the open house.</p>
             </div>
           </div>
-        </div>
-      </section>
+          <div class="masonry" data-group="land">
+            <figure class="tile tile--wide reveal" tabindex="0" data-gallery-type="land" data-lightbox-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="River Bend Acreage" data-lightbox-description="Top-down mapping with parcel outlines illustrating building pads and easements.">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Aerial view of winding river and farmland">
+              <figcaption>
+                <span class="tile-category">Development Parcel</span>
+                <h3>River Bend Acreage</h3>
+                <p>Overlay-ready capture with precise contour detail for investor decks.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile reveal" tabindex="0" data-gallery-type="land" data-lightbox-src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Rolling Pastures" data-lightbox-description="Low-altitude pass to emphasize depth and access roads across 80 acres.">
+              <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&w=900&q=80" alt="Pastureland with trees captured from above">
+              <figcaption>
+                <span class="tile-category">Agricultural</span>
+                <h3>Rolling Pastures</h3>
+                <p>Low altitude sweep connecting pasture networks and entry roads.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile tile--tall reveal" tabindex="0" data-gallery-type="land" data-lightbox-src="https://images.unsplash.com/photo-1526481280695-3c4693f6b5b5?auto=format&fit=crop&w=1200&q=80" data-lightbox-title="Timber Reserve" data-lightbox-description="Elevation map capturing canopy density with layered sun flares.">
+              <img src="https://images.unsplash.com/photo-1526481280695-3c4693f6b5b5?auto=format&fit=crop&w=600&q=80" alt="Forest and mountains captured during sunset">
+              <figcaption>
+                <span class="tile-category">Timber Reserve</span>
+                <h3>Sunset Contours</h3>
+                <p>Golden hour flyover charting canopy density and trail systems.</p>
+              </figcaption>
+            </figure>
+            <figure class="tile reveal" tabindex="0" data-gallery-type="land" data-lightbox-src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1600&q=80" data-lightbox-title="Valley Development" data-lightbox-description="High altitude scout to showcase proximity to arterial routes and amenities.">
+              <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80" alt="Green valley with river and surrounding hills">
+              <figcaption>
+                <span class="tile-category">Land Release</span>
+                <h3>Valley Overview</h3>
+                <p>High-altitude frame to communicate location context and access.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <!-- Video Reels -->
+        <section id="reels" class="gallery-section gallery-section--video" data-section="reels">
+          <div class="section-header">
+            <div>
+              <p class="section-eyebrow">Immersive motion</p>
+              <h2>Video Reels</h2>
+              <p class="section-lede">Looping walkthroughs, commercial brand spots, and parcel splits engineered to make viewers press play — and stay.</p>
+            </div>
+            <div class="section-metric-card">
+              <p class="metric-title">+63% Watch Time</p>
+              <p class="metric-body">Interactive reels keep prospects engaged through the call-to-action.</p>
+            </div>
+          </div>
+
+          <div class="reel-tabs" role="tablist" aria-label="Video categories">
+            <button
+              class="reel-tab is-active"
+              id="reel-tab-walkthrough"
+              type="button"
+              role="tab"
+              aria-selected="true"
+              aria-controls="reel-walkthrough"
+              data-reel="walkthrough"
+              tabindex="0"
+            >Interior Walkthroughs</button>
+            <button
+              class="reel-tab"
+              id="reel-tab-commercial"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="reel-commercial"
+              data-reel="commercial"
+              tabindex="-1"
+            >Commercial Spots</button>
+            <button
+              class="reel-tab"
+              id="reel-tab-parcel"
+              type="button"
+              role="tab"
+              aria-selected="false"
+              aria-controls="reel-parcel"
+              data-reel="parcel"
+              tabindex="-1"
+            >Parcel Splits</button>
+          </div>
+
+          <div class="reel-panels">
+            <div class="reel-panel is-active" id="reel-walkthrough" role="tabpanel" aria-labelledby="reel-tab-walkthrough" data-reel-panel="walkthrough">
+              <article class="reel-card" tabindex="0" data-gallery-type="reels" data-lightbox-video="https://cdn.coverr.co/videos/coverr-luxury-home-interior-4016/1080p.mp4" data-lightbox-title="Summit Ridge Walkthrough" data-lightbox-description="Full interior tour blending gimbal sweeps, slider details, and ambient audio mastering.">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=1200&q=80" alt="Video still of a luxury living room">
+                  <span class="play-icon" aria-hidden="true"></span>
+                </figure>
+                <div class="reel-copy">
+                  <h3>Summit Ridge Walkthrough</h3>
+                  <p>Immersive pacing from foyer to rooftop terrace with guided narration.</p>
+                </div>
+              </article>
+              <article class="reel-card" tabindex="0" data-gallery-type="reels" data-lightbox-video="https://cdn.coverr.co/videos/coverr-modern-house-tour-0452/1080p.mp4" data-lightbox-title="Gallery Place Loft" data-lightbox-description="Quick-cut loft walkthrough optimized for paid social placements.">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=1200&q=80" alt="Video still of a modern loft interior">
+                  <span class="play-icon" aria-hidden="true"></span>
+                </figure>
+                <div class="reel-copy">
+                  <h3>Gallery Place Loft</h3>
+                  <p>Fast-cut story with motion graphics overlays for social-first campaigns.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="reel-panel" id="reel-commercial" role="tabpanel" aria-labelledby="reel-tab-commercial" data-reel-panel="commercial" hidden>
+              <article class="reel-card" tabindex="0" data-gallery-type="reels" data-lightbox-video="https://cdn.coverr.co/videos/coverr-dji-drone-footage-of-the-water-village-in-thailand-7993/1080p.mp4" data-lightbox-title="Destination Resort Promo" data-lightbox-description="Voiceover-driven spot weaving aerials, lifestyle vignettes, and call-to-action end cards.">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Video still of a waterfront resort">
+                  <span class="play-icon" aria-hidden="true"></span>
+                </figure>
+                <div class="reel-copy">
+                  <h3>Destination Resort Promo</h3>
+                  <p>Brand storytelling anchored by sunrise aerials and guest moments.</p>
+                </div>
+              </article>
+              <article class="reel-card" tabindex="0" data-gallery-type="reels" data-lightbox-video="https://cdn.coverr.co/videos/coverr-city-streets-traffic-4715/1080p.mp4" data-lightbox-title="Downtown Development Launch" data-lightbox-description="Investor-targeted piece blending motion graphics and drone cityscapes.">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" alt="Video still of city skyline at night">
+                  <span class="play-icon" aria-hidden="true"></span>
+                </figure>
+                <div class="reel-copy">
+                  <h3>Downtown Development Launch</h3>
+                  <p>Call-to-invest narrative with kinetic typography and night aerials.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="reel-panel" id="reel-parcel" role="tabpanel" aria-labelledby="reel-tab-parcel" data-reel-panel="parcel" hidden>
+              <article class="reel-card" tabindex="0" data-gallery-type="reels" data-lightbox-video="https://cdn.coverr.co/videos/coverr-dji-mavic-pro-footage-5190/1080p.mp4" data-lightbox-title="Parcel Split Overview" data-lightbox-description="Layered parcel outlines and animated callouts for multi-tract releases.">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80" alt="Video still of a rural property from above">
+                  <span class="play-icon" aria-hidden="true"></span>
+                </figure>
+                <div class="reel-copy">
+                  <h3>Parcel Split Overview</h3>
+                  <p>Color-coded overlays that make acreage and access points unmistakable.</p>
+                </div>
+              </article>
+              <article class="reel-card" tabindex="0" data-gallery-type="reels" data-lightbox-video="https://cdn.coverr.co/videos/coverr-sunrise-over-rolling-hills-9938/1080p.mp4" data-lightbox-title="Equestrian Estate Release" data-lightbox-description="Sunrise drone passes paired with animated boundary reveals and CTA cards.">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1470246973918-29a93221c455?auto=format&fit=crop&w=1200&q=80" alt="Video still of rolling hills at sunrise">
+                  <span class="play-icon" aria-hidden="true"></span>
+                </figure>
+                <div class="reel-copy">
+                  <h3>Equestrian Estate Release</h3>
+                  <p>Sweeping aerials cut with overlay graphics to highlight paddocks and trails.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <footer>© <span id="y"></span> Horizon Heights Productions</footer>
+    <div class="lightbox" data-lightbox hidden aria-hidden="true" tabindex="-1">
+      <button class="lightbox__close" type="button" aria-label="Close gallery"></button>
+      <div class="lightbox__inner" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+        <div class="lightbox__media" data-lightbox-media></div>
+        <div class="lightbox__caption">
+          <h3 id="lightbox-title"></h3>
+          <p data-lightbox-description></p>
+        </div>
+        <div class="lightbox__controls">
+          <button class="lightbox-nav" type="button" data-lightbox-prev aria-label="Previous item">Prev</button>
+          <div class="lightbox__hint">Use ⟵ ⟶ or swipe to navigate</div>
+          <button class="lightbox-nav" type="button" data-lightbox-next aria-label="Next item">Next</button>
+        </div>
+      </div>
+    </div>
     <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    <script src="gallery.js" defer></script>
   </body>
 </html>
